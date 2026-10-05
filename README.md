@@ -1,0 +1,5 @@
+# Product Enrichment
+
+Product titles from suppliers are short, unstructured strings like "DEWALT 20V MAX Cordless Drill/Driver Kit, 1/2 in." They have no grammar to lean on, and brand spellings and units vary from supplier to supplier. A catalog needs structured attributes (brand, voltage, size, color) to power search, filtering, comparison, and publishing to the website. Extracting those attributes reliably across a large catalog is a core product information management (PIM) problem.
+
+This project builds on [Attribute Extraction from Product Titles in eCommerce](https://arxiv.org/abs/1608.04670) (More, 2016), which pairs sequence labeling with a curated normalization scheme to extract brand from Walmart product titles. It applies that idea in a small service: a Spring Boot API that extracts and normalizes attributes, an event published whenever a product is enriched, a React review screen for low-confidence results, and a labeled evaluation set whose precision and recall are gated in CI.
