@@ -1,4 +1,4 @@
-# Product Enrichment
+# Product Title Extraction
 
 Product titles from suppliers are short, unstructured strings like "DEWALT 20V MAX Cordless Drill/Driver Kit, 1/2 in." They have no grammar to lean on, and brand spellings and units vary from supplier to supplier. A catalog needs structured attributes (brand, voltage, size, color) to power search, filtering, comparison, and publishing to the website. Extracting those attributes reliably across a large catalog is a core product information management (PIM) problem.
 
